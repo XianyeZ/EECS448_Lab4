@@ -1,0 +1,47 @@
+table, th, td {
+    border-style: double;
+    border-width: 2px;
+    text-align: center;
+}
+
+table.front {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-width: 2px;
+}
+
+table.recipt {
+    background-color: rgba(102, 255, 102, 0.8);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+p {
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+}
+
+body {
+    text-align: center;
+}
+
+body.recipt {
+    background-image: url(vegi.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.center {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}

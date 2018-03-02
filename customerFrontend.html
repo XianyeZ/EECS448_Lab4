@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Shop Page</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                background-image: url(vegi.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="userForm" action="customerBackend.php" method="post">
+            <div class="center">
+                Username:<input type = "text" id="username" name="username"> <br>
+                Password:<input type = "password" id="pw" name="pw" required> <br>
+            </div>
+                <table class="front">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Single Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Health Potion</td>
+                            <td>$10</td>
+                            <td><input type="number" id="item1Q" name="item1Q"></td>
+                        </tr>
+                        <tr>
+                            <td>Mega Health Potion</td>
+                            <td>$20</td>
+                            <td><input type="number" id="item2Q" name="item2Q"></td>
+                        </tr>
+                        <tr>
+                            <td>Herbal Medicine</td>
+                            <td>$28</td>
+                            <td><input type="number" id="item3Q" name="item3Q"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <select id="ship" name="ship">
+                    <option value = "none">---</option>
+                    <option value = "free">Free 7-day Shipping</option>
+                    <option value = "oneday">$50 Over Night</option>
+                    <option value = "regular">$5.00 3-day Shipping</option>
+                </select>
+                <br>
+                <input type="submit">
+        </form>
+        <input type="button" value="Reset" onclick="location.reload(true)">
+        
+        <script src="formChecker.js"></script>
+    </body>
+</html>
